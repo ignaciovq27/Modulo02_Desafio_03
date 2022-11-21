@@ -252,7 +252,7 @@ footer p {
     color: black;
     float: left;
     padding: 12px 16px;
-    margin: 3px;
+    margin: 6px;
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 14%;
@@ -312,8 +312,8 @@ footer p {
     }
 
     .grid-container {
-        grid-template-rows: 1fr 8fr 1fr;
-        grid-template-columns: 1.5fr 8fr;
+        grid-template-rows: 1fr 80% 1fr;
+        grid-template-columns: 1.5fr 85%;
         grid-template-areas:
             "navbar   busqueda"
             "navbar   main"
