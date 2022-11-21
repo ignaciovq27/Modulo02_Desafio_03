@@ -100,9 +100,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
 }
 
 .grid {
+     /* overflow-y: scroll; */
+    /* height: 100vh; */
+    /* width: 90%; */
     display: grid;
     justify-content: space-between;
     justify-items: center;
@@ -110,6 +114,8 @@ main {
     gap: 1rem;
     padding: 20px;
     max-height: fit-content;
+
+
 }
 
 .card {
@@ -161,6 +167,10 @@ main {
 
 .item-8 {
     background-image: url(https://placedog.net/507/500?r);
+}
+
+.item-9 {
+    background-image: url(https://placedog.net/508/500?r);
 }
 
 .card p {
@@ -287,10 +297,18 @@ footer p {
 }
 
 /* md Medium */
-@media (min-width: 768px) {
+@media (min-width: 768px) 
+{
+    body{
+            overflow: hidden;
+
+    }
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 96%;
     }
 
     .grid-container {
